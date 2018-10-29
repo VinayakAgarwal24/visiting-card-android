@@ -3,10 +3,16 @@
     package="com.community.jboss.visitingcard">
 
     <!--
-        TODO: Add location/GPS access permissions
         TODO: Change the Label of the Activities according to the Activity's context
         TODO: Change App Icon .i.e., ic_launcher
     -->
+    <!--
+    	Done: Added gps access permissions, also added permission to access the Internet
+
+    -->
+	 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
